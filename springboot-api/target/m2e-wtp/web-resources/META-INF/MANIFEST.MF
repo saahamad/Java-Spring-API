@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: AppsProSite
+Implementation-Version: AppsProSite-SNAPSHOT
+Built-By: saahamad
+Implementation-Vendor-Id: com
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/AppsProSite-
+ api/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
