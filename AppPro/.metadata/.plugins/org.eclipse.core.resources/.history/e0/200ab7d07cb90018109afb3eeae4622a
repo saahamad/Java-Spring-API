@@ -1,0 +1,37 @@
+package com.awt;
+
+import java.awt.Container;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class BoxLayoutDemo extends JFrame {
+
+	public BoxLayoutDemo() {
+		
+		Container container = new Container();
+		
+		JButton login = new JButton("Login");
+		JButton logout = new JButton("Logout");
+		
+		
+		JButton b = new JButton("Login");
+		
+		
+		container.add(login);
+		container.add(logout);
+			
+		this.add(container);
+		
+		
+		setLayout(new BoxLayout(container, BoxLayout.X_AXIS));
+		setSize(400,400);
+		setVisible(true);	
+		
+	}
+
+	public static void main(String[] args) {
+			new BoxLayoutDemo();
+	}
+}

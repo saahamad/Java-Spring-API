@@ -1,0 +1,24 @@
+package com.awt;
+
+import java.awt.Button;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+
+public class TestWindow extends Frame{
+
+		public TestWindow() {
+			System.out.println("Start...");
+			Button b =  new  Button("Click me");			
+			this.add(b);
+			this.setLayout(new FlowLayout());
+			this.setSize(1000, 1000);			
+			this.setVisible(true);
+		}
+		
+	public static void main(String[] args) {
+		
+		TestWindow testWindow = new TestWindow();
+
+	}
+
+}

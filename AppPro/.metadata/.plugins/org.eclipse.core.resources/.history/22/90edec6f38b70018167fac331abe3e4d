@@ -1,0 +1,20 @@
+package com.awt;
+
+import javax.swing.JFrame;
+
+public class TestWindow extends JFrame{
+
+		public TestWindow() {
+			System.out.println("Start...");
+			
+			this.setSize(1000, 1000);			
+			this.setVisible(true);
+		}
+		
+	public static void main(String[] args) {
+		
+		TestWindow testWindow = new TestWindow();
+
+	}
+
+}

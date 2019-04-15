@@ -1,0 +1,24 @@
+package com.collection;
+
+import java.util.LinkedList;
+
+public class TestHeapError {
+
+	public static void main(String[] args) {
+		
+		String name = "Sarfaraz";
+		LinkedList<String> list = new LinkedList<>();
+		
+		while(true)
+		{
+			
+			name = name + "Love to India!";
+			list.add(name);
+		}
+			
+		}
+		
+
+	}
+
+}

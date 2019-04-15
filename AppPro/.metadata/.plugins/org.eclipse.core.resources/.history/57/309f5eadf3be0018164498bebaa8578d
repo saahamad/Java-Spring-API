@@ -1,0 +1,35 @@
+package com.applet;
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.Graphics;
+import java.awt.TextField;
+
+public class TestAppletComponents extends Applet {
+	
+	Button b;
+	TextField t;
+	
+	@Override
+public void init() {
+	b = new Button("Click me!");
+	t = new TextField(10);
+	
+	this.add(b);
+	this.add(t);
+  }
+	
+	@Override
+	public void paint(Graphics g) {
+		
+	}
+
+}
+
+/*
+
+<html>
+  <applet code="TestAppletComponents.class" height="500" width="500" />
+</html>
+
+*/

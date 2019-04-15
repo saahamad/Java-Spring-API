@@ -1,0 +1,82 @@
+package io.java.quickstart;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+@FunctionalInterface
+interface Test{
+	
+	String getDefault(String msg);
+}
+
+public class TestDefault{
+	
+	static void setString(String msg)
+	{
+		
+		System.out.println(msg);
+	}
+	
+		static {
+			
+			System.out.println("static block");
+			//setTest(TestDefault::getDefault);
+					}
+		
+		public static void main(String[] args) throws CloneNotSupportedException{
+			System.out.println("main block");			
+			dateAndTime();
+			Mouse.testClone();
+		}
+		
+		public void bufferedReader() throws IOException {
+			
+			InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+			BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+			System.out.println("Enter a text...");
+			String line = bufferedReader.readLine();
+			System.out.println(line);
+		}
+		
+		
+		static public String getDefault(String msg) {    
+		System.out.println("Its called");
+			return msg;
+		}
+		
+		static public void dateAndTime(){
+			Date date = new Date();
+			System.out.println(date);
+			 GregorianCalendar gcalendar = new GregorianCalendar();
+			System.out.println(gcalendar.get(Calendar.DATE)+"/"+gcalendar.get(Calendar.MONTH)+"/"+gcalendar.get(Calendar.YEAR));
+			System.out.println(gcalendar.get(Calendar.HOUR)+":"+gcalendar.get(Calendar.MINUTE)+":"+gcalendar.get(Calendar.SECOND));
+			
+		}
+
+		static public void setTest(Test  test) {
+			//Test testData = test;
+			
+			System.out.println(test.getDefault("Test data"));
+		}		
+}
+
+class Mouse implements Cloneable
+{
+	int x=100;
+	static void  testClone() throws CloneNotSupportedException{
+		 
+		Mouse mouse = new Mouse();
+		Mouse mouseclone = (Mouse) mouse.clone();
+		System.out.println(mouse.x);
+		System.out.println(mouseclone.x);
+		mouseclone.x=200;
+		System.out.println(mouse.x);
+		System.out.println(mouseclone.x);
+	 }
+	
+}
+

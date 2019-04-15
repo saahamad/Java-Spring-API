@@ -1,0 +1,18 @@
+package com.awt;
+
+import java.awt.Frame;
+
+public class TestFrame extends Frame{
+	
+		public TestFrame() {
+			System.out.println("start..");
+			this.setSize(100, 100);
+			
+		}
+
+		public static void main(String[] args) {
+			new TestFrame();
+		}
+}
+
+

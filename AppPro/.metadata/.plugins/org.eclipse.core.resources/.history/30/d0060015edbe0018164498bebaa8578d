@@ -1,0 +1,24 @@
+package com.applet;
+
+import java.applet.Applet;
+//import java.awt.Graphics;
+
+public class AppletTest extends Applet {
+	
+	@Override
+	public void init() {
+		System.out.println("init called..");
+	}
+	
+	@Override
+	public void start() {
+		System.out.println("starts called..");
+	}
+	
+	@Override
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		super.paint(g);
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.applet;
+
+import java.applet.Applet;
+
+public class AppletTest extends Applet {
+	
+	@Override
+	public void init() {
+		System.out.println("init called..");
+	}
+
+}

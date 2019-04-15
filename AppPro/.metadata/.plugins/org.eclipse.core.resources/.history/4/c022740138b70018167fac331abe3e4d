@@ -1,0 +1,16 @@
+package com.awt;
+
+public class TestWindow {
+
+		public TestWindow() {
+			System.out.println("Start...");
+			
+		}
+		
+	public static void main(String[] args) {
+		
+		TestWindow testWindow = new TestWindow();
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.awt;
+
+import java.awt.Button;
+import java.awt.Dialog;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class TestWindow extends Frame implements ActionListener{
+	
+	static Dialog dialog;
+
+		public TestWindow() {
+			System.out.println("Start...");
+			TextField t1 = new TextField("Enter a number here.");
+			TextField t2 = new TextField("Enter a number here.");
+			Button b =  new  Button("Hide me!!");
+			dialog = new Dialog(this,"Dailog!!!",true);
+			b.addActionListener(this);
+			dialog.add(b);
+			dialog.setLayout(new FlowLayout());
+			dialog.setSize(1000, 1000);			
+			dialog.setVisible(true);
+		}
+		
+	public static void main(String[] args) {
+		
+		TestWindow testWindow = new TestWindow();
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		TestWindow.dialog.setVisible(false);
+	}
+
+}

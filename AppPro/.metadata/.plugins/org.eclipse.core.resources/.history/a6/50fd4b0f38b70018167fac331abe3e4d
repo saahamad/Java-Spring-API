@@ -1,0 +1,18 @@
+package com.awt;
+
+import java.awt.Frame;
+
+public class TestWindow extends Frame{
+
+		public TestWindow() {
+			System.out.println("Start...");
+			
+		}
+		
+	public static void main(String[] args) {
+		
+		TestWindow testWindow = new TestWindow();
+
+	}
+
+}

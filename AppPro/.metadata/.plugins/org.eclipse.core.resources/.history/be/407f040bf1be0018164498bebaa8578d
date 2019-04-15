@@ -1,0 +1,30 @@
+package com.applet;
+
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class GraphicsTest extends Applet{
+	
+	@Override
+	public void paint(Graphics g) {
+		
+		g.drawString("Welcome to Applet home...", 10, 50);
+		g.drawLine(0, 10, 0, 20);
+	   //g.drawLine(90, 135, 90, 180); 
+        g.setColor(Color.BLACK);  // Now we tell g to change the color 
+        g.drawLine(10, 10, 10, 50); 
+        
+        g.drawRect(0, 0, 100, 100);
+        
+        g.drawArc(0, 0, 50, 50, 0, 360);
+	}
+}
+
+/*
+
+<html>
+  <applet code="GraphicsTest.class" height="300" width="300" />
+</html>
+
+*/

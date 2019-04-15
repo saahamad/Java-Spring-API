@@ -1,0 +1,14 @@
+package com.awt;
+
+public class TestWindow {
+
+		public TestWindow() {
+			
+		}
+		
+	public static void main(String[] args) {
+		
+
+	}
+
+}

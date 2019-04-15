@@ -1,0 +1,40 @@
+package com.starter.controller;
+
+import java.util.StringJoiner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.starter.business.EnqueryBusiness;
+import com.starter.service.Enquery;
+
+@RestController
+@RequestMapping("/EnqueryController")
+public class EnqueryController {
+
+	@Autowired
+	private EnqueryBusiness enqueryBusiness;
+	
+	@RequestMapping("/testenquery")
+	public String testEnquery() {	
+		 StringJoiner joinNames = new StringJoiner(","); 
+	        joinNames.add("Name");  
+	        joinNames.add("Email");  
+	        joinNames.add("Course");  
+	        joinNames.add("Qualification");  
+	                  
+	        System.out.println(joinNames);  
+		return "Fill the all required (*) details for enquery!!"+joinNames;	
+	}
+	
+	@RequestMapping(method = RequestMethod.POST,value = "/enquery")
+	public boolean addTopic(@RequestBody Enquery enquery) {		
+		if(enqueryBusiness.postEnquery(enquery))
+		return true;
+		
+		return false;	
+	}
+}

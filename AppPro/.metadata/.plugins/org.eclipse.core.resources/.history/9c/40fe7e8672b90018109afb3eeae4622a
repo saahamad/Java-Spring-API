@@ -1,0 +1,32 @@
+package com.awt;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class TestFrame extends JFrame{
+	
+		public TestFrame() {
+			System.out.println("start..");
+			
+			JButton b = new JButton("Click me!");
+			JButton b1 = new JButton("Submit");
+			
+			add(b);
+			add(b1);
+			
+			//For layout
+			setLayout(new FlowLayout());
+			
+			// For Window
+			setSize(500, 500);
+			setVisible(true);
+		}
+
+		public static void main(String[] args) {
+			new TestFrame();
+		}
+}
+
+

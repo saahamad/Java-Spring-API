@@ -1,0 +1,42 @@
+package com.awt;
+
+import java.awt.Container;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class BoxLayoutDemo extends JFrame {
+
+	public BoxLayoutDemo() {
+		
+		Container container = new Container();
+		JTextField t1 = new JTextField(10);
+		JTextField t2 = new JTextField(10);
+		
+		JLabel l1 = new JLabel("User Name");
+		JLabel l2 = new JLabel("User Pass");
+		
+		JButton b = new JButton("Login");
+		
+		
+		container.add(l1);
+		container.add(t1);
+		container.add(l2);
+		container.add(t2);
+		container.add(b);
+		this.add(container);
+		
+		
+		setLayout(container,new BoxLayout(BoxLayout.X_AXIS));
+		setSize(400,400);
+		setVisible(true);	
+		
+	}
+
+	public static void main(String[] args) {
+			new BoxLayoutDemo();
+	}
+}

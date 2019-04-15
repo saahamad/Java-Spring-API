@@ -1,0 +1,22 @@
+package com.applet;
+
+import java.awt.Graphics;
+
+public class GraphicsTest extends AppletTest{
+	
+	@Override
+	public void paint(Graphics g) {
+		
+		g.drawString("Welcome to Applet home...", 10, 50);
+		g.drawLine(0, 10, 0, 20);
+	}
+
+}
+
+/*
+
+<html>
+  <applet code="AppletTest.class" height="300" width="300" />
+</html>
+
+*/

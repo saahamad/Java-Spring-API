@@ -1,0 +1,23 @@
+package com.starter.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.starter.business.EnqueryBusiness;
+import com.starter.service.Enquery;
+
+@RestController
+public class EnqueryController {
+
+	@Autowired
+	private EnqueryBusiness enqueryBusiness;
+	
+	@RequestMapping(method = RequestMethod.POST,value = "/enquery")
+	public boolean addTopic(@RequestBody Enquery enquery) {		
+		enqueryBusiness.postEnquery();
+		return true;
+	}
+}

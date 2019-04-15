@@ -1,0 +1,13 @@
+package com.basic;
+
+public class HashCodeTest {
+	
+	public static void main(String[] args) {
+		
+		HashCodeTest test = new HashCodeTest();
+		System.out.println(test.hashCode());
+		System.out.println(test);
+
+	}
+
+}

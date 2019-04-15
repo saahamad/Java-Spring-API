@@ -1,0 +1,19 @@
+package com.awt;
+
+import java.awt.Frame;
+
+public class TestMouseListener extends Frame {
+	
+	public TestMouseListener() {
+		
+		this.setSize(300,300);
+		this.setVisible(true);
+		
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
