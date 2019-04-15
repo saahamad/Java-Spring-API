@@ -1,8 +1,0 @@
-package com.applet;
-
-import java.applet.Applet;
-
-public class AppletTest extends Applet {
-	
-
-}

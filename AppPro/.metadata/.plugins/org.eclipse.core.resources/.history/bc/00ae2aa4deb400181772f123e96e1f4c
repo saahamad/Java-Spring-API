@@ -1,5 +1,0 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html>
-<h1>Welcome To the App pro Home </h1>
-</html>

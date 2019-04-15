@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: AppproSite
-Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: saahamad
-Implementation-Vendor-Id: com.controller
-Build-Jdk: 1.8.0_161
-Implementation-URL: http://apppro.com
-Created-By: Maven Integration for Eclipse
-
